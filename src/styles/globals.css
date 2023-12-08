@@ -1,0 +1,736 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css?family=Oswald:500,400|Inter:700,800|Lora:400");
+@font-face {
+  font-family: "Sofia Pro-Regular";
+  src: url("https://fonts.animaapp.com/SofiaPro-Regular") format("truetype");
+}
+
+@font-face {
+  font-family: "Sofia Pro-Bold";
+  src: url("https://fonts.animaapp.com/SofiaPro-Bold") format("opentype");
+}
+
+@font-face {
+  font-family: "source Serif Pro";
+  src: url("https://fonts.animaapp.com/SofiaPro-Light") format("opentype");
+}
+
+@font-face {
+  font-family: "Sofia Pro-ExtraLight";
+  src: url("https://fonts.animaapp.com/SofiaPro-ExtraLight") format("truetype");
+}
+
+@font-face {
+  font-family: "Sofia Pro-Medium";
+  src: url("https://fonts.animaapp.com/SofiaPro-Medium") format("opentype");
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: white;
+  text-align: right !important;
+}
+
+.swiper {
+  /* width: 20% !important; */
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+#player,
+.video-stream {
+  width: 1030px !important;
+  left: 470px !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+
+.active-tab {
+  background-color: #4a90e2;
+  color: red;
+  height: fit-content;
+  padding: 0px 10px;
+  border-bottom: 2px;
+}
+.index .business-wrapper {
+  background-image: url(https://cdn.animaapp.com/projects/650436ea563939b650df9455/releases/650437a496d31c08b0a413c5/img/image-2@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 314px;
+  width: 500px;
+}
+.text-wrapper-42 {
+  top: 410px;
+  left: 196px;
+  padding: 2px 6px;
+  background-color: #af5faf;
+  color: white;
+  opacity: 0.9;
+}
+
+.index .text-wrapper-37 {
+  color: #fff;
+  letter-spacing: 0;
+  font-family: Oswald, Helvetica;
+  font-size: 9px;
+  font-weight: 400;
+  line-height: normal;
+  position: relative; /* Add relative positioning */
+  top: 20%; /* Adjust as needed */
+  transform: translateY(-10%); /* Center vertically */
+  left: 8px;
+}
+.index .text-wrapper-43 {
+  color: #393939;
+  font-size: 15px;
+}
+
+.index .text-wrapper-44 {
+  color: #2c2c2c;
+}
+
+.index .text-wrapper-45 {
+  color: #39393999;
+  font-size: 15px;
+}
+.index .text-wrapper-46 {
+  color: #39393999;
+  font-family: "Sofia Pro-ExtraLight", Helvetica;
+  font-size: 14px;
+  font-weight: 200;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 15.6px;
+  top: 351px;
+  width: 370px;
+}
+.index .text-wrapper-47 {
+  color: #393939;
+  font-family: "Oswald", Helvetica;
+  font-size: 15px;
+  font-weight: 600;
+}
+.index .text-wrapper-48 {
+  color: #f65050;
+  font-family: "Oswald", Helvetica;
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative; /* or 'relative' based on your layout */
+  right: 0px; /* Adjust this value as needed */
+  top: 0;
+}
+.index .text-wrapper-49 {
+  color: #393939;
+  font-family: "Oswald", Helvetica;
+  font-size: 18px;
+  font-weight: 800;
+  left: 100px;
+  letter-spacing: 0;
+  line-height: normal;
+  top: 0;
+}
+
+.index .text-wrapper-97 {
+  color: #ffffff;
+  font-family: "Oswald", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 388px;
+  letter-spacing: 0;
+  line-height: normal;
+  top: 842px;
+  width: 34px;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.px-4 {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-64 {
+  height: 16rem;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-gray-500 {
+  color: #718096;
+}
+
+.index .overlap-56 {
+  background-size: cover;
+  height: 539px;
+}
+.index .rectangle-4 {
+  background-color: #11101075;
+  height: 539px;
+}
+.index .fairytale-fame-sehar {
+  color: #fdfcfc;
+  font-family: "Inter", Helvetica;
+  font-size: 28px;
+  font-weight: 700;
+  left: 530px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+
+  /* top: 1262px; */
+  margin-top: -200px;
+  margin-left: 60px;
+}
+
+.index .rectangle-5 {
+  background-color: #f71b1b;
+  height: 32px;
+  left: 27px;
+  top: 21px;
+  width: 47px;
+  /* position: absolute; */
+  /* left: 233px;
+  top: 879px; */
+  margin-top: -430px;
+  margin-left: 40px;
+}
+
+.index .text-wrapper-97 {
+  color: #ffffff;
+  font-family: "Oswald", Helvetica;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  left: 235px;
+  top: 879px;
+  width: 34px;
+  /* position: absolute; */
+  margin-top: -30px;
+  margin-left: 42px;
+}
+.index .button {
+  height: 24px;
+  width: 58px;
+}
+.index .right-button {
+  background-color: rgb(246, 91, 80);
+  background-image: url(https://cdn.animaapp.com/projects/650436ea563939b650df9455/releases/650437a496d31c08b0a413c5/img/frame-9.svg);
+  background-size: 100% 100%;
+  height: 24px;
+  width: 24px;
+}
+.index .frame-7 {
+  height: 24px;
+  width: 24px;
+}
+
+.index .overlap-group-10 {
+  height: 24px;
+  position: relative;
+}
+.index .rectangle {
+  background-color: #f6775099;
+  height: 24px;
+
+  transform: rotate(-180deg);
+  width: 24px;
+}
+.index .cricket-wrapper {
+  background-image: url(https://cdn.animaapp.com/projects/650436ea563939b650df9455/releases/650437a496d31c08b0a413c5/img/image-13@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 372px;
+  width: 553px;
+}
+.index .stay-connected {
+  width: 272px;
+  height: 204px;
+  top: 2145px;
+  left: 1035px;
+}
+.index .line-7 {
+  background-image: url(https://cdn.animaapp.com/projects/650436ea563939b650df9455/releases/650437a496d31c08b0a413c5/img/line-4.svg);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 1px;
+  left: 0;
+  margin-bottom: 10px;
+  width: 270px;
+}
+
+.index .facebook-2 {
+  height: 40px;
+  left: 0;
+  top: 64px;
+  width: 134px;
+}
+
+.index .overlap-group-12 {
+  height: 40px;
+  position: relative;
+  width: 150px;
+}
+.index .instagram-2 {
+  height: 40px;
+  left: 140px;
+  top: 64px;
+  width: 150px;
+}
+
+.index .overlap-20 {
+  background-color: #c23785;
+  height: 40px;
+  position: relative;
+  width: 150px;
+}
+
+.index .frame-9 {
+  height: 16px;
+  left: 13px;
+  top: 12px;
+  width: 16px;
+}
+
+.index .youtube-2 {
+  height: 40px;
+  left: 0;
+  top: 114px;
+  width: 134px;
+}
+
+.index .overlap-21 {
+  background-color: #ef5043;
+  height: 40px;
+  position: relative;
+  width: 150px;
+}
+
+.index .text-wrapper-65 {
+  color: #ffffff;
+  font-family: "Sofia Pro-Medium", Helvetica;
+  font-size: 12px;
+  font-weight: 500;
+  left: 39px;
+  letter-spacing: 0;
+  line-height: normal;
+  top: 10px;
+  white-space: nowrap;
+}
+
+.index .text-wrapper-66 {
+  color: #ffffff;
+  font-family: "Sofia Pro-Medium", Helvetica;
+  font-size: 12px;
+  font-weight: 500;
+  left: 39px;
+  letter-spacing: 0;
+  line-height: normal;
+  top: 21px;
+  white-space: nowrap;
+}
+
+.index .twitter-2 {
+  height: 40px;
+  left: 140px;
+  top: 114px;
+  width: 134px;
+}
+
+.index .overlap-22 {
+  background-color: #42c0f5;
+  height: 40px;
+  position: relative;
+  width: 150px;
+}
+
+.index .behance {
+  height: 40px;
+  left: 0;
+  top: 164px;
+  width: 134px;
+}
+
+.index .overlap-23 {
+  background-color: #1b7bfd;
+  height: 40px;
+  position: relative;
+  width: 150px;
+}
+
+.index .dribble {
+  height: 40px;
+  left: 140px;
+  top: 164px;
+  width: 134px;
+}
+
+.index .overlap-24 {
+  background-color: #f7679d;
+  height: 40px;
+  position: relative;
+  width: 150px;
+}
+
+.index .ad {
+  height: 290px;
+  left: 1035px;
+  top: 2374px;
+  width: 272px;
+}
+
+.index .overlap-25 {
+  background-image: url(https://cdn.animaapp.com/projects/650436ea563939b650df9455/releases/650437a496d31c08b0a413c5/img/image-19@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 290px;
+  position: relative;
+  width: 320px;
+}
+.index .text-wrapper-63 {
+  color: #ffffff;
+  font-family: "Sofia Pro-Medium", Helvetica;
+  font-size: 12px;
+  font-weight: 500;
+  left: 39px;
+  letter-spacing: 0;
+  line-height: normal;
+  top: 12px;
+  white-space: nowrap;
+}
+
+.index .text-wrapper-64 {
+  color: #ffffff;
+  font-family: "Sofia Pro-Medium", Helvetica;
+  font-size: 12px;
+  font-weight: 500;
+  left: 39px;
+  letter-spacing: 0;
+  line-height: normal;
+  top: 23px;
+  white-space: nowrap;
+}
+.index .frame-8 {
+  height: 16px;
+  left: 10px;
+  top: 12px;
+  width: 16px;
+}
+
+.text-wrapper-59 {
+  top: 410px;
+  left: 196px;
+  padding: 2px 6px;
+  background-color: #0cd16f;
+  color: white;
+  opacity: 0.9;
+}
+.index .text-wrapper-67 {
+  color: #ffffff;
+  font-family: "Lora", Helvetica;
+  font-size: 36px;
+  font-weight: 400;
+  position: absolute;
+  left: 113px;
+  letter-spacing: 0;
+  line-height: normal;
+  top: 122px;
+}
+.index .post-19 {
+  left: 0;
+  top: 67px;
+}
+
+.index .post-20 {
+  height: 425px;
+  left: 0;
+  top: 0;
+  width: 426px;
+}
+.index .overlap-30 {
+  background-image: url(https://cdn.animaapp.com/projects/650436ea563939b650df9455/releases/650437a496d31c08b0a413c5/img/image-20@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 272px;
+  width: 494px;
+}
+.overlap-31 {
+  background-image: url(https://cdn.animaapp.com/projects/650436ea563939b650df9455/releases/650437a496d31c08b0a413c5/img/image-84@2x.png);
+
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 272px;
+  width: 454px;
+}
+.index .text-wrapper-70 {
+  color: #393939;
+  letter-spacing: 0;
+  font-family: Oswald, Helvetica;
+  font-size: 20px;
+  font-weight: 600;
+}
+.index .get-latest-updates {
+  width: auto;
+  height: 195px;
+}
+.index .overlap-32 {
+  background-color: #dedada;
+  width: 20rem;
+  height: 195px;
+  text-align: center;
+  position: relative;
+}
+.index .text-wrapper-71 {
+  color: #2c2c2c;
+  letter-spacing: 0;
+  white-space: nowrap;
+  font-family: Oswald, Helvetica;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 29.5px;
+}
+.index .overlap-33 {
+  background-color: #f65050;
+  width: 220px;
+  height: 40px;
+  position: relative;
+}
+.index .text-wrapper-73 {
+  color: #fff;
+  letter-spacing: 0;
+  white-space: nowrap;
+  font-family:
+    Sofia Pro-Bold,
+    Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 29.5px;
+}
+.index .categories {
+  width: 20rem;
+  height: 339px;
+  margin-top: 60px;
+}
+.index .text-wrapper-74 {
+  color: #f65050;
+  letter-spacing: 0;
+  font-family: Oswald, Helvetica;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+}
+.overlap-35 {
+  background-image: url(https://cdn.animaapp.com/projects/650436ea563939b650df9455/releases/650437a496d31c08b0a413c5/img/image-82.png);
+  background-position: 50%;
+  background-size: cover;
+  width: 1200px;
+  height: 165px;
+  padding-right: 2px;
+position: relative;
+  right: 92px;
+
+  margin-bottom: 200px;
+}
+.image-container img {
+  width: 20%;
+  height: auto;
+  display: block;
+  margin-right: 593px;
+}
+
+.index .overlap-38 {
+  /* background-image: url(https://cdn.animaapp.com/projects/650436ea563939b650df9455/releases/650437a496d31c08b0a413c5/img/video.png); */
+  background-size: cover;
+  width: 1200px;
+  height: 400px;
+  position: relative;
+}
+.index .video {
+  width: 870px;
+  height: 768px;
+}
+.index .video-2 {
+  width: 874px;
+  height: 400px;
+  margin: auto;
+  margin-right: 120px; /* This will center the video both horizontally and vertically */
+  display: block;
+}
+.text-wrapper-82 {
+  color: #fff;
+  letter-spacing: 0;
+  white-space: nowrap;
+  font-family:
+    Sofia Pro-Regular,
+    Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12.1px;
+}
+.index .play-this-game-for {
+  color: #fff;
+  letter-spacing: 0;
+  font-family: Oswald, Helvetica;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: normal;
+}
+.index .overlap-group-25 {
+  background-color: #fe4a51;
+  width: 59px;
+  height: 21px;
+  position: relative;
+}
+.index .video-icon {
+  border: 2px solid;
+  border-radius: 35px;
+  height: 100px;
+  left: 558px;
+  position: absolute;
+  top: 132px;
+  width: 100px;
+}
+
+.index .polygon {
+  height: 23px;
+  left: 26px;
+  position: absolute;
+  top: 22px;
+  width: 20px;
+}
+.esport {
+  position: absolute;
+  top: 16px;
+  left: 24px;
+  color: white;
+}
+.index .overlap-39 {
+  background-image: url(https://cdn.animaapp.com/projects/650436ea563939b650df9455/releases/650437a496d31c08b0a413c5/img/video-2@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 200px;
+}
+.index .overlap-40 {
+  background-image: url(https://cdn.animaapp.com/projects/650436ea563939b650df9455/releases/650437a496d31c08b0a413c5/img/video-3@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 200px;
+}
+.index .overlap-41 {
+  background-image: url(https://cdn.animaapp.com/projects/650436ea563939b650df9455/releases/650437a496d31c08b0a413c5/img/video-4@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 200px;
+}
+
+.polygon-wrapper {
+  border: 2px solid;
+  border-color: #ffffff;
+  border-radius: 19px;
+  height: 38px;
+  left: 354px;
+  position: sticky;
+  top: 493px;
+  width: 38px;
+}
+.polygon-2 {
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.instagram-follow-us-wrapper {
+  background-image: url(https://cdn.animaapp.com/projects/650436ea563939b650df9455/releases/650437a496d31c08b0a413c5/img/image-27.svg);
+  background-size: 100% 100%;
+  width: 288px;
+}
+.index .instagram-follow-us-2 {
+  width: 148px;
+  height: 146px;
+  position: relative;
+  top: 71px;
+  left: 71px;
+}
+.index .overlap-group-29 {
+  background-color: rgba(194, 60, 55, 0.6);
+  border-radius: 73px;
+  width: 146px;
+  height: 146px;
+  position: relative;
+}
+.index .frame-11 {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 55px;
+  left: 55px;
+}
+.index .text-wrapper-85 {
+  color: #fff;
+  letter-spacing: 0;
+  white-space: nowrap;
+  font-family:
+    Sofia Pro-Medium,
+    Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  position: absolute;
+  top: 101px;
+  left: 35px;
+}
+.post-23 {
+  max-height: 127px;
+  overflow: hidden;
+   max-width: 95%;
+  padding: 2px;
+  gap: 2%;
+}
